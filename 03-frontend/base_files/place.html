@@ -1,50 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place Details</title>
+    <title>Détails de l'hébergement</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Logo" class="logo">
-        <nav>
-            <a href="index.html">Home</a>
-        </nav>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Logo Hbnb" class="logo">
+            <a href="#" class="login-button">Login</a>
+        </div>
     </header>
     <main>
-        <section id="place-details">
-            <img src="images/place-large.jpg" alt="Place Image" class="place-image-large">
-            <div class="place-info">
-                <h2>Place Name</h2>
-                <p>Host: John Doe</p>
-                <p>Price: $100/night</p>
-                <p>Location: City, Country</p>
-                <p>Description: A detailed description of the place.</p>
-                <p>Amenities: WiFi, Pool, Breakfast</p>
+        <section id="places">
+            <h2>Places Disponibles</h2>
+            <div class="filter">
+                <label for="country-filter">Filtrer par pays :</label>
+                <select id="country-filter">
+                    <option value="all">Tous</option>
+                    <option value="usa">États-Unis</option>
+                    <option value="canada">Canada</option>
+                    <!-- Autres options -->
+                </select>
             </div>
-        </section>
-        <section id="reviews">
-            <h3>Reviews</h3>
-            <div class="review-card">
-                <p>Comment: Great place to stay!</p>
-                <p>User: Jane Smith</p>
-                <p>Rating: 5/5</p>
+            <div class="places-list">
+                <div class="place-card">
+                    <h3>Maison de plage</h3>
+                    <p>Prix par nuit : 150 €</p>
+                    <p>Lieu : Los Angeles, États-Unis</p>
+                    <a href="details.html" class="view-details-button">Voir les détails</a>
+                </div>
+                <div class="place-card">
+                    <h3>Chalet</h3>
+                    <p>Prix par nuit : 100 €</p>
+                    <p>Lieu : Toronto, Canada</p>
+                    <a href="details.html" class="view-details-button">Voir les détails</a>
+                </div>
+                <div class="place-card">
+                    <h3>Appartement moderne</h3>
+                    <p>Prix par nuit : 200 €</p>
+                    <p>Lieu : New York, États-Unis</p>
+                    <a href="details.html" class="view-details-button">Voir les détails</a>
+                </div>
             </div>
-            <!-- More review cards as needed -->
-        </section>
-        <section id="add-review">
-            <h3>Add a Review</h3>
-            <form id="review-form">
-                <label for="review-text">Review:</label>
-                <textarea id="review-text" name="review-text" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 All Rights Reserved.</p>
+        <p>&copy; 2024 HBNB Evolution. Tous droits réservés.</p>
     </footer>
     <script src="scripts.js"></script>
 </body>

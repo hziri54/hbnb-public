@@ -1,4 +1,4 @@
-
+/* Styles globaux */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-
+/* En-tête */
 header {
     background-color: #333;
     color: #fff;
@@ -20,13 +20,13 @@ header .logo {
     height: 50px;
 }
 
-header .login-button {
+header .login-button, header nav a {
     color: #fff;
     text-decoration: none;
     margin: 10px;
 }
 
-
+/* Contenu principal */
 main {
     padding: 20px;
     background-color: #fff;
@@ -34,7 +34,19 @@ main {
     margin: 20px;
 }
 
+.place-card, .review-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
 
+.place-image, .place-image-large {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Formulaires */
 form {
     margin: 0 auto;
     max-width: 600px;
@@ -58,7 +70,7 @@ select {
     margin-bottom: 10px;
 }
 
-
+/* Boutons */
 button {
     background-color: #007bff;
     color: white;
@@ -72,7 +84,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-
+/* Pied de page */
 footer {
     background-color: #333;
     color: #fff;

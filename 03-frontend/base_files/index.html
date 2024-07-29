@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <img src="images/logo.png" alt="Logo" class="logo">
         <nav>
             <a href="login.html" class="login-button">Login</a>
         </nav>
@@ -21,8 +22,18 @@
         </section>
         <section id="places-list">
             <!-- List of places will be populated dynamically -->
+            <div class="place-card">
+                <img src="images/place1.jpg" alt="Place Image" class="place-image">
+                <h3>Place Name</h3>
+                <p>Price: $100/night</p>
+                <p>Location: City, Country</p>
+                <button class="details-button" onclick="location.href='place.html'">View Details</button>
+            </div>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 All Rights Reserved.</p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>

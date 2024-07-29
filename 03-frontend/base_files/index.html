@@ -3,49 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Available Places</title>
+    <title>List of Places</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <img src="images/logo.png" alt="Logo" class="logo">
+        <div class="header-container">
+            <img src="images/logo.png" alt="Airbnb Logo" class="logo">
             <nav>
                 <a href="login.html" class="login-button">Login</a>
             </nav>
         </div>
     </header>
     <main>
-        <section class="filter-section">
-            <label for="country-filter">Filter by country:</label>
+        <section id="filter">
+            <label for="country-filter">Filter by Country:</label>
             <select id="country-filter">
                 <!-- Options will be populated dynamically -->
-                <option>All</option>
             </select>
         </section>
-        <section class="places-section">
-            <div class="place-card">
-                <h3>Beautiful Beach House</h3>
-                <p>Price per night: $150</p>
-                <p>Location: Los Angeles, United States</p>
-                <button class="view-details-button" onclick="location.href='place.html'">View Details</button>
-            </div>
-            <div class="place-card">
-                <h3>Cozy Cabin</h3>
-                <p>Price per night: $100</p>
-                <p>Location: Toronto, Canada</p>
-                <button class="view-details-button" onclick="location.href='place.html'">View Details</button>
-            </div>
-            <div class="place-card">
-                <h3>Modern Apartment</h3>
-                <p>Price per night: $200</p>
-                <p>Location: New York, United States</p>
-                <button class="view-details-button" onclick="location.href='place.html'">View Details</button>
-            </div>
+        <section id="places-list">
+            <!-- List of places will be populated dynamically -->
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 HBnB Evolution. All rights reserved.</p>
+        <p>&copy; 2024 Airbnb. All rights reserved.</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

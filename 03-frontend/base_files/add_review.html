@@ -7,18 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <img src="logo.png" alt="Application Logo" class="logo">
+        <a href="login.html" class="login-button">Login</a>
+    </header>
     <main>
-        <form id="review-form">
+        <form id="review-form" class="form add-review">
             <h2>Add a Review</h2>
-            <label for="place">Place:</label>
-            <input type="text" id="place" name="place" readonly>
-            
-            <label for="review">Review:</label>
-            <textarea id="review" name="review" required></textarea>
-            
+            <div class="form-group">
+                <label for="place">Place:</label>
+                <input type="text" id="place" name="place" readonly>
+            </div>
+            <div class="form-group">
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required>
+            </div>
             <button type="submit">Submit</button>
         </form>
     </main>
+    <footer>
+        <p>All rights reserved &copy; 2024</p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>

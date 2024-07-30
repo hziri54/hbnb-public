@@ -1,57 +1,60 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Détails de l'hébergement</title>
+    <title>Accommodation Details</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo HBnB">
+            <img src="logo.png" alt="HBnB Logo">
         </div>
         <div class="login-button">
-            <button>Se connecter</button>
+            <button>Login</button>
         </div>
     </header>
     
+    <main>
         <section id="places">
-            <h2>Places Disponibles</h2>
+            <h2>Available Places</h2>
             <div class="filter">
-                <label for="country-filter">Filtrer par pays :</label>
+                <label for="country-filter">Filter by country:</label>
                 <select id="country-filter">
-                    <option value="all">Tous</option>
-                    <option value="usa">États-Unis</option>
+                    <option value="all">All</option>
+                    <option value="usa">United States</option>
                     <option value="canada">Canada</option>
-                    <!-- Autres options -->
+                    <!-- Other options -->
                 </select>
             </div>
             <div class="places-list">
                 <div class="place-card">
-                    <h3>Maison de plage</h3>
-                    <p>Prix par nuit : 150 €</p>
-                    <p>Lieu : Los Angeles, États-Unis</p>
-                    <a href="details.html" class="view-details-button">Voir les détails</a>
+                    <h3>Beach House</h3>
+                    <p>Price per night: $150</p>
+                    <p>Location: Los Angeles, United States</p>
+                    <a href="details.html" class="view-details-button">View Details</a>
                 </div>
                 <div class="place-card">
-                    <h3>Chalet</h3>
-                    <p>Prix par nuit : 100 €</p>
-                    <p>Lieu : Toronto, Canada</p>
-                    <a href="details.html" class="view-details-button">Voir les détails</a>
+                    <h3>Cabin</h3>
+                    <p>Price per night: $100</p>
+                    <p>Location: Toronto, Canada</p>
+                    <a href="details.html" class="view-details-button">View Details</a>
                 </div>
                 <div class="place-card">
-                    <h3>Appartement moderne</h3>
-                    <p>Prix par nuit : 200 €</p>
-                    <p>Lieu : New York, États-Unis</p>
-                    <a href="details.html" class="view-details-button">Voir les détails</a>
+                    <h3>Modern Apartment</h3>
+                    <p>Price per night: $200</p>
+                    <p>Location: New York, United States</p>
+                    <a href="details.html" class="view-details-button">View Details</a>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 HBNB Evolution. Tous droits réservés.</p>
+        <p>&copy; 2024 HBNB Evolution. All rights reserved.</p>
     </footer>
+    
     <script src="scripts.js"></script>
 </body>
 </html>
